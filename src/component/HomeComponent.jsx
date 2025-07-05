@@ -35,7 +35,7 @@ export default function HomeComponent() {
                     setTopMovie(moviesWithImages[0]);
                     setMovies(moviesWithImages.slice(1));
                 } catch (err) {
-                    setError('Failed to fetch trending movies.');
+                    setError('Failed to fetch movies.');
                     console.error(err);
                 } finally {
                     setLoading(false);

@@ -10,7 +10,7 @@ function App() {
       <Router>
           <Routes>
               <Route path="/" element={<MainComponent />}>
-                  <Route index element={<Navigate to="trending" replace />} />
+                  <Route index element={<Navigate to="home" replace />} />
                   <Route path="home" element={<HomeComponent />} />
                   <Route path="trending" element={<TrendingComponent />} />
                   <Route path="movie/:id" element={<FilmDetail />} />
