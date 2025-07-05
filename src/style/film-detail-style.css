@@ -1,0 +1,195 @@
+.detail-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+}
+
+.film-detail {
+    display: flex;
+    max-width: 1200px;
+    width: 80%;
+    background: linear-gradient(90deg, #1e1e1e 0%, #1b1b1b 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.detail-film-poster {
+    width: 420px;
+    height: auto;
+    object-fit: cover;
+}
+
+.film-content {
+    padding: 32px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.score {
+    font-size: 16px;
+    color: #f5c518;
+}
+
+
+.meta {
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.meta p{
+    color: #ffffff;
+    font-family: "Poppins-Medium", Helvetica,serif;
+    font-size: 14px;
+    font-weight: 400;
+    left: 32px;
+    letter-spacing: 0;
+    line-height: 20px;
+    top: 291px;
+    white-space: nowrap;
+}
+
+.description {
+    color: #ffffff;
+    font-family: "Poppins-Medium", Helvetica,serif;
+    font-weight: 400;
+    left: 32px;
+    letter-spacing: 0;
+    top: 291px;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.watch-btn {
+    background-color: #6100c2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.watch-btn:hover {
+    background-color: #7d2ee3;
+}
+
+
+.favorite-btn {
+    -webkit-backdrop-filter: blur(6px) brightness(100%);
+    align-items: flex-start;
+    backdrop-filter: blur(6px) brightness(100%);
+    background: linear-gradient(
+            100deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0) 100%
+    );
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    gap: 6px;
+    padding: 9px;
+}
+
+.favorite-btn::before {
+    -webkit-mask-composite: xor;
+    background: linear-gradient(
+            326deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0) 100%
+    );
+    border-radius: 8px;
+    content: "";
+    inset: 0;
+    mask-composite: exclude;
+    padding: 1px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.star-icon {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 768px) {
+    .film-detail {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .detail-film-poster {
+        width: 100%;
+        height: auto;
+    }
+
+    .film-content {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .meta {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .watch-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .favorite-btn {
+        padding: 8px;
+    }
+}

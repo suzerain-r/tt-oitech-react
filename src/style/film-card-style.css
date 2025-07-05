@@ -1,0 +1,147 @@
+/*.film-card-div {
+  height: 301px;
+  width: 255px;
+  border-radius: 20px;
+}*/
+
+.film-card-div {
+    width: 100%;
+    max-width: 255px;
+    margin: 0 auto;
+}
+
+
+
+.film-card-content-div {
+    height: 301px;
+    width: 255px;
+    border-radius: 20px;
+}
+
+.card-film-poster {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 301px;
+    position: relative;
+    top: -1px;
+    border-radius: 20px;
+}
+
+.film-meta {
+    backdrop-filter: blur(10px) brightness(100%);
+    height: 86px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.film-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: normal;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    font-family: "Poppins-SemiBold", Helvetica, serif;
+    -webkit-box-orient: vertical;
+    margin-bottom: 4px;
+}
+
+/* Год отделён снизу */
+.film-year {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Poppins-Regular", Helvetica, serif;
+    line-height: 16px;
+}
+
+.favourite-btn {
+    -webkit-backdrop-filter: blur(6px) brightness(100%);
+    align-items: flex-start;
+    backdrop-filter: blur(6px) brightness(100%);
+    background: linear-gradient(
+            100deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0) 100%
+    );
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    gap: 6px;
+    left: 203px;
+    padding: 9px;
+    position: absolute;
+    top: 20px;
+}
+
+.favourite-btn::before {
+    -webkit-mask-composite: xor;
+    background: linear-gradient(
+            326deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 0) 100%
+    );
+    border-radius: 8px;
+    content: "";
+    inset: 0;
+    mask-composite: exclude;
+    padding: 1px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo-heart {
+    height: 14px;
+    position: relative;
+    width: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .film-card-div {
+        max-width: 100%;
+    }
+
+    .film-card-content-div {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-film-poster {
+        height: 220px;
+        border-radius: 14px;
+    }
+
+    .film-meta {
+        padding: 8px 12px;
+        height: auto;
+    }
+
+    .film-title {
+        font-size: 14px;
+    }
+
+    .film-year {
+        font-size: 12px;
+    }
+
+    .favourite-btn {
+        top: 12px;
+        right: 12px;
+        left: auto;
+    }
+}
