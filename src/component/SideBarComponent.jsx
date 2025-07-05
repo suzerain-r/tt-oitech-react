@@ -31,7 +31,7 @@ export default function SideBarComponent() {
 
             <div className="nav-left">
                 <div className="top-section">
-                    <div  className={`nav-item ${isActive('/') ? 'active-nav' : ''}`} onClick={() => navigate('/')}>
+                    <div  className={`nav-item ${isActive('/home') ? 'active-nav' : ''}`} onClick={() => navigate('/home')}>
                         <img className="icon" alt="Home" src={home} />
                         <span className="label">Home</span>
                     </div>
