@@ -10,8 +10,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<MainComponent />}>
-            <Route index element={<HomeComponent />} />
-            <Route path="trending" element={<TrendingComponent />} />
+            <Route element={<HomeComponent />} />
+            <Route path="trending" index element={<TrendingComponent />} />
             <Route path="movie/:id" element={<FilmDetail />} />
           </Route>
         </Routes>
