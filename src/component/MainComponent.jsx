@@ -33,7 +33,7 @@ export default function MainComponent() {
             </div>
 
             <div className="main-content">
-                <Header onSearch={handleSearch} onToggleSidebar={toggleSidebar} />
+                <Header onSearch={handleSearch} onToggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen}/>
                 <Outlet context={{ searchQuery }} />
             </div>
         </div>

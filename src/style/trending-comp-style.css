@@ -4,6 +4,7 @@
     gap: 24px;
     margin-top: 455px;
     padding: 40px 32px;
+    position: relative;
 }
 
 
@@ -87,18 +88,6 @@
 }
 
 
-.watch-button-text {
-    color: white;
-    font-family: "Poppins-Medium", Helvetica,serif;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 20px;
-    margin-top: -1.00px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-}
 
 .title-text {
     color: #ffffff;
@@ -131,22 +120,23 @@
         top: 140px;
         left: 16px;
     }
-
-    .watch-button-div {
-        top: 220px;
+    .year-genre-p {
+        top: 175px;
         left: 16px;
-        padding: 10px 16px;
+        font-size: 14px;
     }
+
 
     .favorite-button-div {
         top: 220px;
-        left: 140px;
-        padding: 8px;
+        left: 124px;
+        padding: 10px;
     }
 
     .trending-watch-btn {
         font-size: 14px;
         padding: 12px 16px;
+        left: 16px;
         top: 220px;
     }
 }

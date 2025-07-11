@@ -19,7 +19,7 @@
 .sidebar-div {
     background-color: #21201e;
     box-shadow: 2px 0 90px #6100c266;
-    height: 100%;
+    height: 100vh;
     left: 0;
     position: fixed;
     top: 0;
@@ -32,9 +32,6 @@
 
 
 
-.sidebar-div.active {
-    transform: translateX(0);
-}
 
 .sidebar-overlay {
     display: none;
@@ -45,10 +42,6 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 150;
-}
-
-.sidebar-overlay.active {
-    display: block;
 }
 
 
@@ -65,7 +58,13 @@
         transform: translateX(-100%);
     }
 
+
+    .sidebar-overlay.active {
+        display: block;
+    }
+
     .sidebar-div.active {
+        width: 60%;
         transform: translateX(0);
     }
 }

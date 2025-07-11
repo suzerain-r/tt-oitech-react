@@ -77,10 +77,5 @@
 }
 
 @media (max-width: 768px) {
-    .top-div,
-    .nav-left {
-        display: none;
-    }
-
 
 }

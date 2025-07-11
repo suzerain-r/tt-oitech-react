@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_BASE = 'https://movies-tv-shows-database.p.rapidapi.com/';
 const HEADERS = {
-    'x-rapidapi-key': 'your_api_key',
+    'x-rapidapi-key': '763874b81cmshb5a1595fcce50b5p102356jsnf7af2b12136d',
     'x-rapidapi-host': 'movies-tv-shows-database.p.rapidapi.com'
 };
 

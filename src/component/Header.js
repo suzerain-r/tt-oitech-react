@@ -4,7 +4,7 @@ import ellipse757 from '../assets/ellipse-757.svg';
 import search from '../assets/search.svg';
 import '../style/header-style.css';
 
-export default function Header({ onSearch, onToggleSidebar }) {
+export default function Header({ onSearch, onToggleSidebar, isSidebarOpen }) {
     const [searchQuery, setSearchQuery] = useState('');
 
     const handleSearch = () => {
@@ -16,13 +16,13 @@ export default function Header({ onSearch, onToggleSidebar }) {
 
     return (
 
+
         <div className="header-div">
 
-            <div className="hamburger" onClick={onToggleSidebar}>
+            <div className={`hamburger ${isSidebarOpen ? 'hidden' : ''}`} onClick={onToggleSidebar}>
                 <span></span>
                 <span></span>
                 <span></span>
-
             </div>
 
             <div className="left-div">

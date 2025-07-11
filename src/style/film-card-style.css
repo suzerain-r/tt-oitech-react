@@ -113,7 +113,7 @@
 
 @media (max-width: 768px) {
     .film-card-div {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .film-card-content-div {
